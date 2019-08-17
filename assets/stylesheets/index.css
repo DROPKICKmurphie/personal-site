@@ -10,6 +10,12 @@ h1 {
 	margin: 10px;
 }
 
+@media (max-width:600px) {
+    h1 {
+        font-size: 72px;
+    }
+}
+
 h2 {
 	font-family:'Abril Fatface', cursive;
 	color: white;
@@ -27,13 +33,51 @@ p {
 	font-family:'Fira Code', monospace;
 	text-align: left;
 }
+
+form {
+	margin-top: 50px;
+}
+
+.form-control {
+	width: 600px;
+	background: transparent;
+	border-bottom: 1px solid;
+	color: white;
+	font-size: 18px;
+	margin-bottom: 16px;
+	font-family: 'Fira Code', monospace;
+}
+
+@media (max-width:600px) {
+    .form-control {
+        width: 300px;
+    }
+}
+
+input {
+	height: 45px;
+}
+
+.submit {
+	font-size: 20px;
+	height: 50px;
+	margin-top: 20px;
+}
+
+.submit:hover {
+	background-color:pink;
+	font-size:25px;
+	cursor: pointer;
+
+}
+
 div {
 	width:550px;
 }
 
 img {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 0.8;
+  filter: alpha(opacity=80);
   border-radius: 50%;
 }
 
