@@ -10,11 +10,6 @@ h1 {
 	margin: 10px;
 }
 
-@media (max-width:600px) {
-    h1 {
-        font-size: 72px;
-    }
-}
 
 h2 {
 	font-family:'Abril Fatface', cursive;
@@ -48,11 +43,6 @@ form {
 	font-family: 'Fira Code', monospace;
 }
 
-@media (max-width:600px) {
-    .form-control {
-        width: 300px;
-    }
-}
 
 input {
 	height: 45px;
@@ -142,3 +132,23 @@ p.resume {
   }
 }    
 
+/* moved and combine the media to the bottom and added .submit
+ and textare to query just to be safe */
+
+@media (max-width:600px) {
+    h1 {
+        font-size: 72px;
+	}
+
+    .form-control {
+        width: 300px;
+	}	
+	
+	.submit {
+		width: 300px;
+	}
+
+	textarea {
+		width: 300px;
+	}
+}
